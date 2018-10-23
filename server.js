@@ -4,7 +4,9 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 //Connecting to database
-mongoose.connect('mongodb://localhost/ieeedtuapp');
+// mongoose.connect('mongodb://localhost/ieeedtuapp');
+// connecting mlab
+mongoose.connect('mongodb://apple123:orange123@ds237713.mlab.com:37713/ieeedtuapp');
 let db = mongoose.connection;
 
 //Check for DB connection

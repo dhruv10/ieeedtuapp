@@ -6,10 +6,10 @@ let sigSchema = mongoose.Schema({
 		type: String,
 		required: true
 	},
-	mentors:{
-		type: String,
-		required: true
-	},
+	mentors:[{
+		name: String,
+		contact: String
+	}],
 	description:{
 		type: String,
 		required: true
@@ -18,13 +18,13 @@ let sigSchema = mongoose.Schema({
 		type: String,
 		required: true
 	},
-	time:{
+	month:{
 		type: String,
-		required: true
+		required: false
 	},
-	contact:{
-		type: String,
-		required: true
+	time:{
+		start: String,
+		end: String
 	}
 });
 

@@ -6,7 +6,7 @@ let projectSchema = mongoose.Schema({
 		type: String,
 		required: true
 	},
-	mentors:[{
+	developers:[{
 		name: String,
 		contact: String
 	}],

@@ -6,10 +6,10 @@ let projectSchema = mongoose.Schema({
 		type: String,
 		required: true
 	},
-	developers:{
-		type: String,
-		required: true
-	},
+	mentors:[{
+		name: String,
+		contact: String
+	}],
 	description:{
 		type: String,
 		required: true

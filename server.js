@@ -164,7 +164,7 @@ app.post('/sig/add', function(req, res){
 	sig.description = req.body.description;
 	sig.date = req.body.date;
 	sig.time = req.body.time;
-	sig.contact = req.body.contact;
+	sig.month = req.body.month;
 
 	sig.save(function(err){
 		if(err){

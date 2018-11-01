@@ -20,7 +20,7 @@ let sigSchema = mongoose.Schema({
 	},
 	month:{
 		type: String,
-		required: false
+		required: true
 	},
 	time:{
 		start: String,
